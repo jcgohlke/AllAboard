@@ -37,9 +37,7 @@ public class OnboardingViewController: UIViewController
     
     fileprivate var payload: OnboardingPayload?
     var onboardingController: OnboardingController?
-    
-    static let storyboardIdentifier = String(describing: OnboardingViewController.self)
-    
+        
     override public func viewDidLayoutSubviews()
     {
         // Add a gradient background

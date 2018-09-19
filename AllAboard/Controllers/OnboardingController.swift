@@ -97,8 +97,7 @@ public class OnboardingController
         if currentScreenIndex < screenSequence.count
         {
             let payload = screenSequence[currentScreenIndex]
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let onboardingVC = storyboard.instantiateViewController(withIdentifier: OnboardingViewController.storyboardIdentifier) as! OnboardingViewController
+            let onboardingVC = OnboardingViewController(nibName: "OnboardingViewController", bundle: nil)
             onboardingVC.load(payload: payload)
             onboardingVC.onboardingController = self
             return onboardingVC
