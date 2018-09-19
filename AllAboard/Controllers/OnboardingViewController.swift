@@ -50,6 +50,7 @@ public class OnboardingViewController: UIViewController
         
         if let pl = payload
         {
+            view.backgroundColor = pl.viewBackgroundColor
             titleLabel.textColor = pl.textColor
             descriptionLabel.textColor = pl.textColor
             affirmativeButton.backgroundColor = pl.buttonBackgroundColor

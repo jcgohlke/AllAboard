@@ -35,10 +35,11 @@ public struct OnboardingPayload
     var opposingButtonTitle: String?
     let affirmativeAction: () -> Bool
     let opposingAction: (() -> Bool)?
+    let viewBackgroundColor: UIColor
     let buttonBackgroundColor: UIColor
     let textColor: UIColor
     
-    public init(title: String, description: String, iconName: String, affirmativeButtonTitle: String, opposingButtonTitle: String?, affirmativeAction: @escaping () -> Bool, opposingAction: (() -> Bool)?, buttonBackgroundColor: UIColor, textColor: UIColor)
+    public init(title: String, description: String, iconName: String, affirmativeButtonTitle: String, opposingButtonTitle: String?, affirmativeAction: @escaping () -> Bool, opposingAction: (() -> Bool)?, viewBackgroundColor: UIColor, buttonBackgroundColor: UIColor, textColor: UIColor)
     {
         self.title = title
         self.description = description
@@ -47,6 +48,7 @@ public struct OnboardingPayload
         self.opposingButtonTitle = opposingButtonTitle
         self.affirmativeAction = affirmativeAction
         self.opposingAction = opposingAction
+        self.viewBackgroundColor = viewBackgroundColor
         self.buttonBackgroundColor = buttonBackgroundColor
         self.textColor = textColor
     }
