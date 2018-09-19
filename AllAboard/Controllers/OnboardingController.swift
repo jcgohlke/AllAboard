@@ -62,7 +62,7 @@ public class OnboardingController
     /// This init function will load the sequence of onboarding screens using an array of `OnboardingPayload` objects.
     ///
     /// - Parameter screens: Array of `OnboardingPayload` objects used to define the composition of the onboarding screen content and in what order they will appear.
-    init(screens sequence: [OnboardingPayload])
+    public init(screens sequence: [OnboardingPayload])
     {
         screenSequence = sequence
         navController.isNavigationBarHidden = true
@@ -70,7 +70,7 @@ public class OnboardingController
     
     /// This function will load the initial onboarding view, load it into the navigation controller and return the navigation controller.
     /// - Returns: A navigation controller which can be presented to start the onboarding UI sequence.
-    func loadInitialStack() -> UINavigationController
+    public func loadInitialStack() -> UINavigationController
     {
         if let firstOVC = loadScreen()
         {
