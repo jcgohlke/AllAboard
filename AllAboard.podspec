@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name     = "AllAboard"
   s.version  = "0.1.0"
   s.summary  = "An easy-to-configure onboarding UI control."
-  s.homepage = ""
+  s.homepage = "https://github.com/jcgohlke/AllAboard"
   s.license  = { :type => "GNU GPLv3", :file => "LICENSE" }
 
   s.author           = "Ben Gohlke"
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.requires_arc          = true
   s.swift_version         = "4.2"
 
-  s.source        = { :git => "http://EXAMPLE/AllAboard.git",
+  s.source        = { :git => "https://github.com/jcgohlke/AllAboard.git",
 		      :tag => "#{s.version}" }
   s.source_files  = "AllAboard/**/*.{swift}"
   s.resources     = "AllAboard/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
