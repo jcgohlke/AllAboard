@@ -39,6 +39,8 @@ public struct OnboardingPayload
     let textColor: UIColor
 //    let darkGradientBackgroundColor: UIColor
 //    let lightGradientBackgroundColor: UIColor
+    
+    public init() {}
 }
 
 public class OnboardingController
