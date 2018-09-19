@@ -37,10 +37,19 @@ public struct OnboardingPayload
     let opposingAction: (() -> Bool)?
     let buttonBackgroundColor: UIColor
     let textColor: UIColor
-//    let darkGradientBackgroundColor: UIColor
-//    let lightGradientBackgroundColor: UIColor
     
-    public init() {}
+    public init(title: String, description: String, iconName: String, affirmativeButtonTitle: String, opposingButtonTitle: String?, affirmativeAction: @escaping () -> Bool, opposingAction: (() -> Bool)?, buttonBackgroundColor: UIColor, textColor: UIColor)
+    {
+        self.title = title
+        self.description = description
+        self.iconName = iconName
+        self.affirmativeButtonTitle = affirmativeButtonTitle
+        self.opposingButtonTitle = opposingButtonTitle
+        self.affirmativeAction = affirmativeAction
+        self.opposingAction = opposingAction
+        self.buttonBackgroundColor = buttonBackgroundColor
+        self.textColor = textColor
+    }
 }
 
 public class OnboardingController
