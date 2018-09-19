@@ -16,6 +16,7 @@
                 <outlet property="descriptionLabel" destination="RFB-Mw-TuT" id="bHQ-4Y-TiT"/>
                 <outlet property="opposingButton" destination="3m9-y6-i6M" id="5v6-hh-no8"/>
                 <outlet property="titleLabel" destination="axu-tv-xnS" id="cFZ-LB-gjP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="gvM-wK-U4j"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -42,6 +43,9 @@
                     <state key="normal" title="Affirmative button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="affirmativeButtonTapped:" destination="-1" eventType="touchUpInside" id="CxS-pV-HHQ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3m9-y6-i6M">
                     <rect key="frame" x="37.5" y="573.5" width="300" height="53.5"/>
@@ -49,6 +53,9 @@
                     <state key="normal" title="Opposing button">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
+                    <connections>
+                        <action selector="opposingButtonTapped:" destination="-1" eventType="touchUpInside" id="OTh-gd-NF4"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
